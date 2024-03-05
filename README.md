@@ -5,16 +5,22 @@ Einstellungen wie das Logo und die Beschriftungen können sie im Webinterface an
 
 ## Mailcow WebUI Favicon ändern:
 Ersetzen sie die folgende Datei, durch ihre eigene Datei (z.B. ein PNG Bild): */opt/mailcow-dockerized/data/web/favicon.ico*
-Führen Sie den folgenden Befehl aus: docker compose restart memcached-mailcow sogo-mailcow
-
+Führen Sie den folgenden Befehl aus:
+```
+docker compose restart memcached-mailcow sogo-mailcow
+```
 ## SOGo Webmailer Favicon ändern:
 Ersetzen sie die folgende Datei, durch ihre eigene Datei (z.B. ein PNG Bild): */opt/mailcow-dockerized/data/conf/sogo/custom-favicon.ico*
-Führen Sie den folgenden Befehl aus: docker compose restart memcached-mailcow sogo-mailcow
-
+Führen Sie den folgenden Befehl aus:
+```
+docker compose restart memcached-mailcow sogo-mailcow
+```
 ## SOGo Webmailer Logo ändern:
 Erstellen Sie ein Logo als SVG Datei und kopieren sie diese nach */opt/mailcow-dockerized/conf/sogo/sogo-full.svg*
-Führen Sie den folgenden Befehl aus: docker compose restart memcached-mailcow sogo-mailcow
-
+Führen Sie den folgenden Befehl aus:
+```
+docker compose restart memcached-mailcow sogo-mailcow
+```
 ## SOGo Webmailer Farben ändern:
 Ändern sie die Datei */opt/mailcow-dockerized/conf/sogo/custom-theme.js* mit dem folgenden Inhalt:
 ```
@@ -52,6 +58,10 @@ Führen Sie den folgenden Befehl aus: docker compose restart memcached-mailcow s
     $mdThemingProvider.generateThemesOnDemand(false);
   }
 })();
+```
+Führen Sie den folgenden Befehl aus:
+```
+docker compose restart memcached-mailcow sogo-mailcow
 ```
 ## SOGo Webmailer Theme ändern:
 Die benötigten Dateien finden Sie oben, diese gehören in das Unterverzeichnis */opt/mailcow-dockerized* - ihr könnt diese auch wie folgt übernehmen:
