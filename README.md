@@ -67,7 +67,7 @@ docker compose restart memcached-mailcow sogo-mailcow
 Die benötigten Dateien finden Sie oben, diese gehören in das Unterverzeichnis */opt/mailcow-dockerized* - ihr könnt diese auch wie folgt übernehmen:
 ```
 cd /opt/mailcow-dockerized
-git https://github.com/pleibling/mailcow.git
+git clone https://github.com/pleibling/mailcow.git
 docker compose down
 docker compose up -d
 ```
