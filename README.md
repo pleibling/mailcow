@@ -63,6 +63,8 @@ docker compose up -d
 ```
 ## Beispielbilder:
 
+![image](https://github.com/pleibling/mailcow/assets/112875086/e9e15561-399d-45ea-93a0-2fc55354df70)
+
 ![image](https://github.com/pleibling/mailcow/assets/112875086/1403ef74-dfb8-48f5-bde6-f09d0d111f52)
 
 ![image](https://github.com/pleibling/mailcow/assets/112875086/3cda5b37-87d7-44ec-8bef-f7f9d186bc4f)
