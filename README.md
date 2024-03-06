@@ -22,7 +22,7 @@ Führen Sie den folgenden Befehl aus:
 docker compose restart memcached-mailcow sogo-mailcow
 ```
 ## SOGo Webmailer Farben ändern:
-Ändern sie die Datei */opt/mailcow-dockerized/conf/sogo/custom-theme.js* mit dem folgenden Inhalt:
+Ändern sie die Datei */opt/mailcow-dockerized/conf/sogo/custom-theme.js* mit dem folgenden Inhalt (es müssen die Fett markierten Inhalte geändert werden und die Auskommentierung am Anfang so wie am Ende entfernt werden):
 ```
 (function() {
   'use strict';
@@ -36,19 +36,19 @@ docker compose restart memcached-mailcow sogo-mailcow
       '300': 'E5E5E5',
       '1000': '4C566A'
     });
-    var blueCow = $mdThemingProvider.extendPalette('red', {
+    var blueCow = $mdThemingProvider.extendPalette('**red**', {
       '600': 'E5E5E5'
     });
     $mdThemingProvider.definePalette('frost-grey', greyMap);
     $mdThemingProvider.definePalette('blue-cow', blueCow);
     $mdThemingProvider.theme('default')
-      .primaryPalette('red', {
+      .primaryPalette('**red**', {
         'default': '400',
         'hue-1': '400',
         'hue-2': '600',
         'hue-3': 'A700'
       })
-      .accentPalette('red', {
+      .accentPalette('**red**', {
         'default': '700',
         'hue-1': '300',
         'hue-2': '300',
@@ -66,7 +66,7 @@ docker compose restart memcached-mailcow sogo-mailcow
 ## SOGo Webmailer Theme ändern:
 Die benötigten Dateien finden Sie oben, diese gehören in das Unterverzeichnis */opt/mailcow-dockerized* - ihr könnt diese auch wie folgt übernehmen:
 ```
-cd /opt/mailcow-dockerized
+cd /opt/mailcow-dockerized/data
 git clone https://github.com/pleibling/mailcow.git
 docker compose down
 docker compose up -d
