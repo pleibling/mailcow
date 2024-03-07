@@ -71,6 +71,8 @@ git clone https://github.com/pleibling/mailcow.git
 docker compose down
 docker compose up -d
 ```
+## Adminguide
+Denn kompletten Adminguide in Deutsch findet ih hier: https://wiki.leibling.de/books/mailcow-adminguide
 ## Beispielbilder:
 
 ![image](https://github.com/pleibling/mailcow/assets/112875086/e9e15561-399d-45ea-93a0-2fc55354df70)
